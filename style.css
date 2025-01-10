@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;   
+}
+
+.demo-container{
+    text-align: center;
+    font-size: larger;
+    padding-block: 2rem;
+    padding-inline: 1rem;
+}
+
+.demo-container a{
+    /* text-decoration: none; */
+    color: black;
+}
