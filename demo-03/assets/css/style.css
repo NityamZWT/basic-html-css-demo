@@ -74,7 +74,7 @@ ul a:hover{
     font-weight: 600;
 }
 
-.btn{
+.explore-btn{
     font-weight: 700;
     font-size: 20px;
     padding-inline:1rem;
@@ -90,7 +90,7 @@ ul a:hover{
     height: fit-content;
 }
 
-.btn:hover{
+.explore-btn:hover{
     background-color: rgb(240 140 60);
 }
 
