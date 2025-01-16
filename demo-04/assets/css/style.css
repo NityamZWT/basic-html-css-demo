@@ -74,7 +74,14 @@
     display: flex;
     width: 100%;
 }
-
+.hero-text::before {
+    content: "";
+    display: inline-block;
+    width: 45px; 
+    height: 2px; 
+    background-color: #099E71; 
+    margin: 10px 1rem;
+  }
 .hero-line-1{
     padding-inline: .5rem;
     padding-top: 0.9rem;
@@ -130,12 +137,15 @@
     padding-inline: 2rem;
 }
 
-.about-description h2, .planning-description h2{
+.about-description h2, .about-heading-1, .planning-description h2{
     font-family: "Playfair Display";
     font-size: 3rem;
     font-weight: 700;
     text-align: left;
     color: #099E71;
+}
+.about-heading-1{
+    display: none;
 }
 
 .about-description p, .planning-description p{
@@ -170,14 +180,14 @@ text-decoration: none;
     padding-inline: 2rem;
 }
 
-.planning-btn{
+.planning-btn-1, .planning-btn-2{
     background: #099E71;
     padding-inline:1.25rem;
     padding-block: 0.625rem;
     width: fit-content;
 }
 
-.planning-btn a{
+.planning-btn-1 a, .planning-btn-2 a{
     text-align: center;
     text-decoration: none;
     color: #FFFFFF;
@@ -185,6 +195,10 @@ text-decoration: none;
     font-size: 18px;
     font-weight: 600;
     width: min-content;
+}
+
+.planning-btn-2{
+    display: none;
 }
 
 .planning-cards{
@@ -227,12 +241,14 @@ line-height: 1.625rem;
 padding-block: 1rem;
 }
 
-.card-logo:hover{
-    background-color: #099E71;
-}
-
 .card:hover{
     border-bottom: 2px solid #099E71;
+    transition: border-bottom 0.3s ease; 
+}
+
+.card:hover .card-logo {
+    background-color: #099E71; 
+    transition: background-color 0.3s ease; 
 }
 
 .footer-section{
@@ -242,8 +258,6 @@ padding-block: 1rem;
 
 .footer-box{
     width: 60%;
-    /* min-width: max(60%, 1000px); */
-    /* min-width: 1000px; */
     display: flex;
     margin: auto;
     align-items: center;
@@ -283,26 +297,6 @@ text-align: left;
     width: 50%;
 }
 
-/* @media(max-width:1018px) and (min-width:800px){
-    .navbar{
-        padding-inline: 5rem;
-        padding-block: 0.3rem;
-        width:100%;
-    }
-    .navbar li{
-        padding-inline: 0.5rem;
-    }
-    .navbar a{
-        font-size: 14px;
-        font-weight: 400;
-    }
-    .header-logo{
-        padding-block: 0rem;
-        width:fit-content;
-    } 
-
-}*/
-
 @media(max-width:1000px) {
 
     .hero-section{
@@ -310,6 +304,22 @@ text-align: left;
     }
     .hero-heading h1{
         font-size: 3.4rem;
+    }
+    .about-section{
+        padding-block: 2rem;
+    }
+    .about-description{
+        padding-top: 1rem;
+    }   
+    .about-heading-2{
+        display: none;
+    }
+    .about-heading-1{
+        display: block !important;
+        margin-right: auto;
+        padding-inline: 2rem;
+        padding-bottom: 2rem;
+        
     }
     .container{
         flex-direction: column;
@@ -329,14 +339,23 @@ text-align: left;
     .planning-description, .planning-cards{
         width: 100%;
     }
+    .footer-box{
+        width: 80%;
+    }
     .footer-image{
-        justify-content: start;
+        justify-content: flex-end;
     }
     .footer-list{
-        justify-content: center;
+        justify-content: flex-start;
     }
-    .planning-btn{
+    .planning-btn-1{
+        display: none;
         margin: auto;
+    }
+    .planning-btn-2{
+        display: block;
+        margin: auto;
+        cursor: pointer;
     }
 }
 
@@ -374,7 +393,6 @@ text-align: left;
     }
     .hero-line-1{
         padding-inline: 0;
-        /* padding-top: 0; */
     }
     .hero-line-1 hr{
         width: 25px;
@@ -388,6 +406,9 @@ text-align: left;
         font-size: 3rem;
         font-weight: 500;
         /* letter-spacing: 0.2em; */
+    }
+    .about-section{
+        padding-block: 3rem;
     }
     .image-holder img{
         width: 100%;
@@ -425,13 +446,12 @@ text-align: left;
     }
     .footer-box{
         width: 100%;
+        padding-inline: 1.5rem;
     }
-     .footer-image{
-        justify-content: center;
-     }
+    
      .footer-image img{
         /* justify-content: end; */
-        width:50%;
-        height: 50%;
+        width:80%;
+        height: auto;
      }
 }
