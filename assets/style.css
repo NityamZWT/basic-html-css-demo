@@ -11,22 +11,83 @@
     margin: auto;   
 }
 
-.card{
+.main-header{
     display: flex;
-    flex-direction: column;
-    width:30%;
+    background-color: #ffffff;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    border-radius: 0.25rem;
-    align-self: stretch;
-   }
-.demo-container{
-    text-align: center;
-    font-size: larger;
-    padding-block: 2rem;
-    padding-inline: 1rem;
 }
 
-.demo-container a{
-    /* text-decoration: none; */
-    color: black;
+.main-header h1{
+    font-size: 4rem;
+    color: cadetblue;
+    font-weight: 800;
 }
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 20px;
+     width: 100%;
+    /*margin-left: auto;
+    margin-right: auto; */
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    padding-block: 2rem;
+    height: auto;
+}
+
+.card{
+ display: flex;
+ flex-direction: column;
+ width:500px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+ border-radius: 10px;
+ align-self: stretch;
+ padding-block-end: 1rem;
+}
+
+.card a{
+    width: 100%;
+}
+ img{
+    border-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+ }
+ .description-box{
+    padding: 1rem;
+ }
+ .description-box h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #2F2937;
+    opacity: 0.8;
+ }
+
+ .solution-btn{
+  width: 30%;
+  padding-inline: 1rem;
+  padding-block: 1rem;
+  background-color: cadetblue;
+  color: #ffffff;
+  margin-inline: auto;
+  margin-top: auto;
+  text-align: center;
+ }
+ .solution-btn a{
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+ }

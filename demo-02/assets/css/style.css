@@ -65,6 +65,7 @@ color: white;
     justify-content: center;
     align-items: center;
     width: fit-content;
+    cursor: pointer;
 }
 
 .header-logo p{
