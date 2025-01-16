@@ -11,6 +11,14 @@
     margin: auto;   
 }
 
+.card{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 0.25rem;
+    align-self: stretch;
+   }
 .demo-container{
     text-align: center;
     font-size: larger;

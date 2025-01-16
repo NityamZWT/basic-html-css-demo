@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+h1{
+    text-align: center;
+    font-size: 5rem;
+    padding: 2rem;
+}
 .main-con{
     display: flex;
     /* flex-flow: row wrap; */
@@ -58,7 +63,6 @@
     flex-basis: 100px;
      */
 
-     flex: 1 0 300px;
-
-
+    flex: 1 0 300px;
 }
+

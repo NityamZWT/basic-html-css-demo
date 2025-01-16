@@ -106,11 +106,8 @@ ul a:hover{
  display: flex;
  flex-direction: column;
  width:30%;
- /* padding-inline: 20px; */
  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
  border-radius: 0.25rem;
- /* padding-block: 2rem; */
- /* border: 2px solid black; */
  align-self: stretch;
 }
 
