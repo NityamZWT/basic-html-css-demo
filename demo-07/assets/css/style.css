@@ -114,8 +114,8 @@ h1{
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  opacity: .9;
+  background: linear-gradient(to top, #3caab4, rgb(0 0 0 / 90%) );
+  /* opacity: .9; */
 }
 
 .content-3{
