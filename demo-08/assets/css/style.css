@@ -1,0 +1,53 @@
+*{
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(120deg,#e8b5a6, #f3045f, #0d9ed2, #012a1f );
+}
+
+.container{
+    margin: auto;
+}
+
+.card{
+    width: 300px;
+    height: 500px;
+    background-color: transparent;
+    perspective: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.inner-card{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover .inner-card {
+    transform: rotateY(180deg);
+}
+
+.front-card, .back-card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.back-card {
+    transform: rotateY(180deg);
+}
+.front-card{
+   object-fit: cover;
+}
+.back-card{
+    object-fit: cover;
+}
