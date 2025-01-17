@@ -26,6 +26,7 @@
     font-size: 4rem;
     color: cadetblue;
     font-weight: 800;
+    text-shadow: 2px 4px  rgba(0, 0, 0, 0.2);
 }
 .container{
     display: flex;
@@ -85,6 +86,7 @@
   margin-inline: auto;
   margin-top: auto;
   text-align: center;
+  border-radius: 10px;
  }
  .solution-btn a{
     color: #ffffff;
